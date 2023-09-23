@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Shehan Maduwantha</title>
+    <link rel="icon" type="image/x-icon" href="./Assets/favicon.png">
+    
+    <!-- import css -->
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+</head>
+<body>
+    
+    <div class="container">
+
+        <header>
+            <nav id="navbar-1">
+                <div class="name-and-profession">
+                    <h2>Shehan Maduwantha</h2>
+                    <small>-- Web Developer | Programmer --</small>
+                </div>
+            
+                <div id="hamburg">
+                    <div id="open" class="ham">
+                        <div class="line line-1"></div>
+                        <div class="line line-2"></div>
+                        <div class="line line-3"></div>
+                    </div>
+                    <div id="close" class="ham-hide">
+                        <div class="cross">X</div>
+                    </div>
+                </div>
+            </nav>
+            <nav id="navbar-2" class="link-nav-default link-nav">
+                <ul>
+                    <li><a href="#cv-section">CV</a></li>
+                    <li><a href="#languages-area">Languages</a></li>
+                    <li><a href="#portfolio-area">Portfolio</a></li>
+                    <li><a href="#contact-area">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <main>
+
+            <!-- about section -->
+            <section class="about" id="self-section">
+                <div class="self-img">
+                    <img src="./Assets/myself.jpg" alt="myself.jpg">
+                </div>
+                <div class="self-data">
+                    <h2 class="self-topic">About</h2>
+                    <p>Hello! I'm an enthusiastic web developer, software engineer, and programmer that has a passion for developing cutting-edge and approachable digital solutions. I like to use stunning and effective code to translate ideas into reality since I have an in-depth understanding of cutting-edge technology and computer languages. My expertise in web development enables me to create dynamic, responsive websites, and my knowledge of software engineering enables me to create reliable apps that satisfy a range of user requirements. Delivering superior solutions that have an effect is something I take pleasure in, whether I'm working alone or with a team to solve difficult challenges. Together, let's create something extraordinary!</p>
+                </div>
+            </section>
+
+            <!-- cv download section-->
+            <section class="cv" id="cv-section">
+                <button type="button" id="cv-download">Download CV</button>
+            </section>
+
+            <!-- languages section -->
+            <section class="languages" id="languages-area">
+                <div id="languages-background">
+                    <video autoplay muted loop id="languageVideo">
+                        <source src="./tempAssets/matrix.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div id="about-languages">
+                    <h2 class="self-topic">Languages &amp; Frameworks</h2>
+                </div>
+                <div id="languages-section"></div>
+            </section>
+
+            <!-- portfolio section -->
+            <section class="portfolio" id="portfolio-area">
+                <div id="about-portfolio">
+                    <h2 class="self-topic">Portfolio</h2>
+                </div>
+                <div id="portfolio-section"></div>
+            </section>
+
+            <!-- contact section -->
+            <section class="contact" id="contact-area">
+                <div id="about-contact">
+                    <h2 class="self-topic">Hire Me !</h2>
+                </div>
+                <form action="#" method="POST" id="contact-form">
+                    <div id="success-message-container"></div>
+                    <div class="first-last-name">
+                        <div class="first-name">
+                            <input type="text" name="first_name" id="firstName" placeholder="First Name" />
+                            <p class="warning first-name-warning"></p>
+                        </div>
+                        <div class="last-name">
+                            <input type="text" name="last_name" id="lastName" placeholder="Lirst Name" />
+                            <p class="warning last-name-warning"></p>
+                        </div>
+                    </div>
+                    <div class="email-address">
+                        <input type="email" name="email" id="emailID" placeholder="example@email.com" />
+                        <p class="warning email-warning"></p>
+                    </div>
+                    <div class="email-message">
+                        <textarea name="message" id="messageArea" cols="30" rows="10" placeholder="Tell me ..."></textarea>
+                        <p class="warning message-warning"></p>
+                    </div>
+                    <div class="email-submit">
+                        <button type="submit" id="submit-btn">Send Message</button>
+                    </div>
+                </form>
+            </section>
+
+        </main>
+    
+        <footer>
+            <p>Made with &nbsp; <i class="fa-solid fa-heart" style="color: #ff0000;"></i> &nbsp; by Shehan Maduwantha</p>
+        </footer>
+
+    </div>
+
+    <!-- import js -->
+    <script type="module" src="main.js"></script>
+    <script src="https://kit.fontawesome.com/aebcb776aa.js" crossorigin="anonymous"></script>
+
+    <!-- EmailJS -->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("6Jmoo1c4bq0djYx2c");
+    })();
+    </script>
+
+</body>
+</html>
