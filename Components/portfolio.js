@@ -25,7 +25,9 @@ function portfolio(element) {
         projectContainerDIV.appendChild(projectContainer);
 
         // image tag
-        const imgTag = `<img src=${images[0]} class="project-img" />`;
+        const imgTag = `<div class="main-img-container">
+                            <img src=${images[0]} class="project-img" />
+                        </div>`;
 
         // overlay
         const overlayDIV = document.createElement("div");
@@ -48,9 +50,22 @@ function portfolio(element) {
         const overlayDescription = document.createElement("p");
         overlayDescription.innerHTML = description;
 
+        const linkHolder = document.createElement("div");
+        linkHolder.className = "project-link-holder";
+        
+        const projectLink = document.createElement("a");
+        projectLink.textContent = "Browse Project";
+        projectLink.setAttribute("href", link);
+        projectLink.setAttribute("alt", title);
+        projectLink.setAttribute("target", "_blank");
+        projectLink.className = "project-browse-link";
+
+        linkHolder.appendChild(projectLink);
+
         overlayDIV.appendChild(overlayTitle);
         overlayDIV.appendChild(overlayDescription);
         overlayDIV.appendChild(programmingLanguages);
+        overlayDIV.appendChild(linkHolder);
 
         // view project button
         // const viewProject = document.createElement("button");

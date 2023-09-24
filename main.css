@@ -42,6 +42,22 @@ p.success-message {
     width: 100%;
 }
 
+a.project-browse-link {
+    padding: 0.5rem 1rem;
+    background-color: var(--topic-color);
+    color: var(--ham-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+div.project-link-holder {
+    margin-top: 1rem;
+}
+
+a.project-browse-link:hover {
+    background-color: firebrick;
+}
+
 /* navbar-1 */
 
 body {
@@ -291,6 +307,8 @@ main section.portfolio #portfolio-section .project-container-div {
     border: 1px solid var(--ham-color);
     box-shadow: 0 0 6px rgba(131,58,180,1);
     animation: changePortfolioColor 5s infinite;
+    display: grid;
+    place-content: end;
 }
 
 @keyframes changePortfolioColor {
