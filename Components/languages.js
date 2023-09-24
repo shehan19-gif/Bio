@@ -14,28 +14,48 @@ function languages(element) {
             skill: 100
         },
         {
-            language: "PHP",
+            language: "Figma",
             skill: 100
         },
         {
-            language: "MySQL",
-            skill: 80
-        },
-        {
-            language: "Python",
-            skill: 75
-        },
-        {
             language: "NodeJS",
-            skill: 50
+            skill: 90
+        },
+        {
+            language: "Express",
+            skill: 90
         },
         {
             language: "React",
-            skill: 10
+            skill: 90
+        },
+        {
+            language: "MongoDB",
+            skill: 90
+        },
+        {
+            language: "MySQL",
+            skill: 90
+        },
+        {
+            language: "PHP",
+            skill: 90
+        },
+        {
+            language: "Python",
+            skill: 80
+        },
+        {
+            language: "C",
+            skill: 70
+        },
+        {
+            language: "C++",
+            skill: 50
         },
         {
             language: "Laravel",
-            skill: 10
+            skill: 50
         },
     ];
 
@@ -45,7 +65,16 @@ function languages(element) {
         skillDIV.classList = `language ${language}-elememnt`;
         
         // icon create and container
-        const iconHTML = `<i class="devicon-${language.toLowerCase()}-plain colored langicon"></i>`;
+
+        let iconHTML = "";
+
+        if(language === "Express") {
+            iconHTML = `<i class="devicon-express-original colored"></i>`;
+        } else if(language === "C++") {
+            iconHTML = `<i class="devicon-cplusplus-plain colored"></i>`;
+        } else {
+            iconHTML = `<i class="devicon-${language.toLowerCase()}-plain colored langicon"></i>`;
+        }
 
         const iconContainer = document.createElement("div");
         iconContainer.className = "icon-div";
