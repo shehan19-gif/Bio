@@ -16,6 +16,6 @@ export default [
         images: ["./tempAssets/Currency-App/currency1.JPG", "./tempAssets/Currency-App/currency2.JPG", "./tempAssets/Currency-App/currency3.JPG", "./tempAssets/Currency-App/currency4.JPG", "./tempAssets/Currency-App/currency5.JPG", "./tempAssets/Currency-App/currency6.JPG"],
         languages: ["HTML5", "CSS3", "JAVASCRIPT"],
         description: "-> Real time data <br /> -> Based on a Currency API",
-        link: "https://currency-converter-uk7b.onrender.com/"
+        link: "https://currency-converter-of4o.onrender.com/"
     }
 ]
