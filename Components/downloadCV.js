@@ -1,5 +1,5 @@
 function downloadCV() {
-    const pathName = "./Assets/Shehan.pdf";
+    const pathName = "./Assets/Shehan-CV.pdf";
     const fileName = "Shehan-CV.pdf";
 
     const link = document.createElement("a");
