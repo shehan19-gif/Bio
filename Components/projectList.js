@@ -17,5 +17,21 @@ export default [
         languages: ["HTML5", "CSS3", "JAVASCRIPT"],
         description: "-> Real time data <br /> -> Based on a Currency API",
         link: "https://currency-converter-of4o.onrender.com/"
+    },
+    {
+        id: idNo++,
+        title: "Travel World",
+        images: ["./tempAssets/Travel-World/travel-1.JPG", "./tempAssets/Travel-World/travel-2.JPG", "./tempAssets/Travel-World/travel-3.JPG", "./tempAssets/Travel-World/travel-4.JPG", "./tempAssets/Travel-World/travel-5.JPG", "./tempAssets/Travel-World/travel-6.JPG"],
+        languages: ["REACT", "CSS3"],
+        description: "-> Countries with their main cities <br /> -> Main cities travel guide videos integrating with YouTube",
+        link: "https://68675471d8f47b1f3c773e2c--travel-world-new.netlify.app/"
+    },
+    {
+        id: idNo++,
+        title: "Portfolio Web",
+        images: ["./tempAssets/Portfolio-Web/portfolio-1.JPG", "./tempAssets/Portfolio-Web/portfolio-2.JPG"],
+        languages: ["REACT", "CSS3"],
+        description: "-> Personal portfolio <br /> -> Browser routing",
+        link: "https://shehan19-gif.github.io/experience"
     }
 ]
