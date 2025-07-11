@@ -32,6 +32,6 @@ export default [
         images: ["./tempAssets/Portfolio-Web/portfolio-1.JPG", "./tempAssets/Portfolio-Web/portfolio-2.JPG"],
         languages: ["REACT", "CSS3"],
         description: "-> Personal portfolio <br /> -> Browser routing",
-        link: "https://shehan19-gif.github.io/experience"
+        link: "https://shehan19-gif.github.io/react-portfolio/"
     }
 ]
