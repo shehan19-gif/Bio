@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Shehan Maduwantha</title>
     <link rel="icon" type="image/x-icon" href="./Assets/favicon.png">
+
+    <!--Animate On Scroll-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
     <!-- import css -->
     <link rel="stylesheet" href="main.css">
@@ -46,12 +50,20 @@
 
             <!-- about section -->
             <section class="about" id="self-section">
-                <div class="self-img">
+                <div class="self-img" data-aos="fade-down-right">
                     <img src="./Assets/myself.jpg" alt="myself.jpg">
                 </div>
-                <div class="self-data">
-                    <h2 class="self-topic">About</h2>
-                    <p>Hello! I'm an enthusiastic web developer, software engineer, and programmer that has a passion for developing cutting-edge and approachable digital solutions. I like to use stunning and effective code to translate ideas into reality since I have an in-depth understanding of cutting-edge technology and computer languages. My expertise in web development enables me to create dynamic, responsive websites, and my knowledge of software engineering enables me to create reliable apps that satisfy a range of user requirements. Delivering superior solutions that have an effect is something I take pleasure in, whether I'm working alone or with a team to solve difficult challenges. Together, let's create something extraordinary!</p>
+                <div class="self-data" data-aos="fade-down-left">
+                    <h2 class="self-topic">About <span style="font-size: 2.5rem;">🙋‍♂️</span></h2>
+                    <p>I’m a passionate web developer and software engineer with expertise in building modern, scalable, and user-friendly digital solutions. My strength lies in transforming ideas into functional, high-performance applications using clean, efficient code and cutting-edge technologies. I thrive in collaborative environments, working closely with teams to solve complex problems and deliver impactful results.</p>
+                    <ul>
+                        <li>
+                            <a href="https://www.linkedin.com/in/shehan-maduwantha-1aa707145/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/shehan19-gif" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        </li>
+                    </ul>
                 </div>
             </section>
 
@@ -68,9 +80,73 @@
                     </video>
                 </div>
                 <div id="about-languages">
-                    <h2 class="self-topic">What I Know <span style="font-size: 2.5rem;">. 🙋‍♂️</span></h2>
+                    <h2 class="self-topic">What I Know <span style="font-size: 2.5rem;">. 💡</span></h2>
                 </div>
                 <div id="languages-section"></div>
+            </section>
+
+            <!--eductional qualification section-->
+            <section class="education" id="education-area">
+                <div id="about-portfolio">
+                    <h2 class="self-topic">Education <span style="font-size: 2.5rem;">📚</span></h2>
+                </div>
+                <div id="education-section">
+                    <div class="qualification q-1" data-aos="fade-right">
+                        <div class="course">
+                            <div class="status">
+                                <p>⏳</p>
+                            </div>
+                            <div class="course-name">
+                                <h2>Bachelor of Information Technology</h2>
+                            </div>
+                        </div>
+                        <div class="institute">
+                            <h3>University of Colombo</h3>
+                        </div>
+                    </div>
+
+                    <div class="qualification q-2" data-aos="fade-left">
+                        <div class="course">
+                            <div class="status">
+                                <p>⏳</p>
+                            </div>
+                            <div class="course-name">
+                                <h2>Bachelor of Science in Information Technology</h2>
+                            </div>
+                        </div>
+                        <div class="institute">
+                            <h3>The Open University of Sri Lanka</h3>
+                        </div>
+                    </div>
+
+                    <div class="qualification q-3" data-aos="fade-right">
+                        <div class="course">
+                            <div class="status">
+                                <p>✅</p>
+                            </div>
+                            <div class="course-name">
+                                <h2>Diploma in Information Technology</h2>
+                            </div>
+                        </div>
+                        <div class="institute">
+                            <h3>University of Colombo</h3>
+                        </div>
+                    </div>
+
+                    <div class="qualification q-4" data-aos="fade-left">
+                        <div class="course">
+                            <div class="status">
+                                <p>✅</p>
+                            </div>
+                            <div class="course-name">
+                                <h2><span style="border: 0.125rem solid aqua;">Ranked 1st</span> in the district in the Advanced Level Engineering Technology (Old Version) stream in 2019 with a Z-Score of 2.0657</h2>
+                            </div>
+                        </div>
+                        <div class="institute">
+                            <h3>General Certificate of Advanced Level</h3>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <!-- portfolio section -->
@@ -78,22 +154,7 @@
                 <div id="about-portfolio">
                     <h2 class="self-topic">Done So Far <span style="font-size: 2.5rem;">... 🎯</span></h2>
                 </div>
-                <div id="portfolio-section"></div>
-            </section>
-
-            <!--hobbies section-->
-            <section class="hobbies" id="hobbies-area">
-                <div id="about-portfolio">
-                    <h2 class="self-topic">Hobbies <span style="font-size: 2.5rem;">🚴‍♂️</span></h2>
-                </div>
-                <div id="hobbies-section">
-                    <ul>
-                        <li><div><i class="fa-brands fa-playstation fa-beat" style="color: #005eff;"></i></div><div>Play Games</div></li>
-                        <li><div><i class="fa-regular fa-futbol fa-bounce" style="color: #00b3ff;"></i></div><div>Play Football</div></li>
-                        <li><div><i class="fa-solid fa-baseball fa-bounce" style="color: #ff0033;"></i></div><div>Play Cricket</div></li>
-                        <li><div><i class="fa-solid fa-plane fa-fade" style="color: #ff7300;"></i></div><div>Travel</div></li>
-                    </ul>
-                </div>
+                <div id="portfolio-section" data-aos="fade-up" data-aos-duration="3000"></div>
             </section>
 
             <!-- contact section -->
@@ -125,6 +186,19 @@
                         <button type="submit" id="submit-btn">Send Message</button>
                     </div>
                 </form>
+                <div class="social-media">
+                    <ul>
+                        <li><a href="https://x.com/ShehanMaduwan14?t=rzuXiNtzdKN83E04NidkUA&s=08" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a></li>
+                        <li><a href="https://www.facebook.com/share/1ZGVvAx1HR/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/shehan_maduwantha98?igsh=aGsxNmVpY2V2Yndj" target="_blank"><i class="fa-brands fa-square-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="e-mail">
+                    <div class="e-mail-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <p>shehanmaduwantha84@gmail.com</p>
+                </div>
             </section>
 
         </main>
@@ -138,6 +212,11 @@
     <!-- import js -->
     <script type="module" src="main.js"></script>
     <script src="https://kit.fontawesome.com/aebcb776aa.js" crossorigin="anonymous"></script>
+
+    <!--Animate On Scroll-->
+    <script>
+        AOS.init();
+    </script>
 
     <!-- EmailJS -->
     <script type="text/javascript"

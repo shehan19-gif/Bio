@@ -1,3 +1,7 @@
+/* google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
 /* reset page */
 
 *, *::before, *::after {
@@ -9,7 +13,7 @@
 /* root data */
 
 :root {
-    --font-family: arial;
+    --font-family: "Space Grotesk", arial;
     --ham-color: white;
     --background-primary: blue;
     --background-dark: black;
@@ -18,6 +22,7 @@
     --topic-color: salmon;
     --progress-background-color-solid: white;
     --progress-background-color-gradient:  linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    --social-icons-color: #2a9d8f;
 }
 
 /* utilities */
@@ -27,6 +32,7 @@
     text-align: center;
     font-family: var(--font-family);
     color: var(--topic-color);
+    font-size: 1.5rem;
 }
 
 p.warning {
@@ -98,6 +104,10 @@ header nav#navbar-1 .name-and-profession {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+header nav#navbar-1 .name-and-profession h2 {
+    font-size: 2rem;
 }
 
 /* header nav#navbar-1 h2 {
@@ -194,9 +204,30 @@ main section.about .self-img img {
     100% {border-left-color: rgba(252,176,69,1);}
 }
 
+main section.about .self-data {
+    display: grid;
+    grid-gap: 1rem;
+}
+
 main section.about .self-data p{
     color: var(--ham-color);
     font-family: var(--font-family);
+    line-height: 1.25rem;
+    font-size: 1.125rem;
+}
+
+main section.about .self-data ul {
+    list-style-type: none;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    grid-gap: 1rem;
+}
+
+main section.about .self-data ul a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--social-icons-color);
 }
 
 /* main CV section */
@@ -418,6 +449,8 @@ main {
 main section.contact {
     padding: 1rem;
     background-color: var(--background-dark);
+    display: grid;
+    grid-gap: 1rem;
 }
 
 main section.contact form {
@@ -497,6 +530,30 @@ main section.contact form .email-submit button:hover {
     background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
 }
 
+main #contact-area .social-media ul{
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 1rem;
+    list-style-type: none;
+    justify-content: center;
+}
+
+main #contact-area .social-media ul a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--social-icons-color);
+}
+
+main #contact-area .e-mail {
+    display: grid;
+    grid-gap: 1rem;
+    justify-content: center;
+    grid-auto-flow: column;
+    color: var(--social-icons-color);
+    font-family: var(--font-family);
+    font-size: 1rem;
+}
+
 /* footer */
 
 footer {
@@ -508,30 +565,48 @@ footer {
 
 /* hobbies */
 
-main .hobbies {
+main .education {
     padding: 2rem;
     color: var(--ham-color);
     font-family: var(--font-family);
     background-color: var(--background-dark-light-white);
 }
 
-main .hobbies #hobbies-section ul {
-    display: flex;
-    gap: 1rem;
-    justify-content: space-around;
-    align-items: center;
-    list-style-type: none;
+main .education #education-section {
+    display: grid;
+    grid-gap: 1rem;
+    grid-auto-rows: 1fr;
 }
 
-main .hobbies #hobbies-section ul li {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-    justify-content: space-between;
+main .education #education-section .qualification {
+    display: grid;
+    justify-content: center;
+    grid-gap: 1rem;
+    padding: 1rem;
+    border: 0.5rem double var(--ham-color);
+    border-top-right-radius: 2rem;
+    border-bottom-left-radius: 5rem;
 }
 
-main .hobbies #hobbies-section ul li i {
+main .education #education-section .qualification .status p {
     font-size: 1.5rem;
+}
+
+main .education #education-section .qualification .course {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 1rem;
+    align-items: center;
+    border-bottom: 0.125rem dashed var(--ham-color);
+    padding-bottom: 1rem;
+}
+
+main .education #education-section .qualification .course .course-name h2 {
+    text-align: center;
+}
+
+main .education #education-section .qualification .institute {
+    text-align: center;
 }
 
 /* media queries */
@@ -559,6 +634,10 @@ main .hobbies #hobbies-section ul li i {
 
     header nav.link-nav-default ul li {
         padding: 1rem;
+    }
+
+    header nav#navbar-1 .name-and-profession h2 {
+        font-size: 1.5rem;
     }
 
     main section.about .self-img img {
