@@ -434,6 +434,8 @@ main {
     justify-content: center;
     align-items: center;
     margin-top: 1rem;
+    padding: 0.25rem;
+    background-color:rgb(63, 38, 16)
 }
 
 .programming-languages i {
