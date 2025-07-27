@@ -33,5 +33,13 @@ export default [
         languages: ["REACT", "CSS3"],
         description: "-> Personal portfolio <br /> -> Browser routing",
         link: "https://shehan19-gif.github.io/react-portfolio/"
+    },
+    {
+        id: idNo++,
+        title: "Url Shortener",
+        images: ["./tempAssets/Url-Shortener/url-1.JPG", "./tempAssets/Url-Shortener/url-2.JPG", "./tempAssets/Url-Shortener/url-3.JPG", "./tempAssets/Url-Shortener/url-4.JPG"],
+        languages: ["REACT", "CSS3", "NODEJS", "NPM", "EXPRESS", "MONGODB", "MONGOOSE", "GIT", "GITHUB"],
+        description: "-> Url Shortener <br /> -> Strict URL check <br /> -> URL redirection for original site",
+        link: "https://hop-link.vercel.app/"
     }
 ]
