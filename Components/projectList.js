@@ -4,6 +4,14 @@ let idNo = 1;
 export default [
     {
         id: idNo++,
+        title: "AI Chat Application",
+        images: ["./tempAssets/AI-Chat-App"],
+        languages: ["REACT", "CSS3", "NODEJS"],
+        description: "=> AI chat bot using Gemini AI",
+        link: "https://chat-free-with-gemini.netlify.app/"
+    },
+    {
+        id: idNo++,
         title: "Weather Application",
         images: ["./tempAssets/Weather-App/weather-01.JPG", "./tempAssets/Weather-App/weather-02.JPG", "./tempAssets/Weather-App/weather-03.JPG", "./tempAssets/Weather-App/weather-04.JPG"],
         languages: ["HTML5", "CSS3", "JAVASCRIPT"],
