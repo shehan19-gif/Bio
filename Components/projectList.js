@@ -5,7 +5,7 @@ export default [
     {
         id: idNo++,
         title: "AI Chat Application",
-        images: ["./tempAssets/AI-Chat-App"],
+        images: ["./tempAssets/AI-Chat-App/ai-chat-app-01.JPG"],
         languages: ["REACT", "CSS3", "NODEJS"],
         description: "=> AI chat bot using Gemini AI",
         link: "https://chat-free-with-gemini.netlify.app/"
