@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Disallow: /tempAssets/
+Disallow: /admin/
+Sitemap: https://www.shehan.de/sitemap.xml
+
+#Crawl-delay: 10
+
+User-agent: GPTBot
+Disallow: /

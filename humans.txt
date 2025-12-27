@@ -1,0 +1,19 @@
+/* TEAM */
+Developer: Shehan Maduwantha
+Email: shehanmaduwantha84@gmail.com
+Website: https://www.shehan.de
+Twitter: @ShehanMaduwan14
+GitHub: @shehan19-gif
+Location: Sri Lanka
+
+/* SITE */
+Last update: 2025
+Standards: HTML5, CSS3, ES6+
+Components: JavaScript Modules, EmailJS, AOS
+Software: VS Code
+
+/* THANKS */
+Font Awesome: https://fontawesome.com
+Animate On Scroll: https://michalsnik.github.io/aos/
+EmailJS: https://www.emailjs.com
+Devicon: https://devicon.dev
